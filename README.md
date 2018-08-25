@@ -8,10 +8,10 @@ Supported features:
 
 No.|Feature Name|Country Specific
 --:|------------|----------------------------------
-1.|[VAT Date](SDD/VATDate.md)|
-2.|[Postponed VAT](SDD/PostponedVAT.md)|
-3.|[Full VAT Posting](SDD/FullVATPorting.md)|
-4.|[Reverse Charge Posting](SDD/ReverseChargePosting.md)|
+1.|[VAT Date](features/VATDate.md)|
+2.|[Postponed VAT](features/PostponedVAT.md)|
+3.|[Full VAT Posting](features/FullVATPorting.md)|
+4.|[Reverse Charge Posting](features/ReverseChargePosting.md)|
 5.|Informative VAT|SI
 6.|Red reversal Posting|
 7.|Forced Debit / Credit Posting|
@@ -20,11 +20,11 @@ No.|Feature Name|Country Specific
 10.|VAT Books|
 11.|VIES Feature|
 12.|Delivery Declaration|
-13.|[FAS Report](SDD/FAS.md)|
+13.|[FAS Report](features/FAS.md)|
 14.|KRD Report|SI
 15.|BST Report|SI
-16.|[Export G/L and VAT](SDD/ExportGLandVAT.md)|SI
-17.|[Detail Trial Balance Extended](SDD/DetailTrialBalanceExtended.md)|HR
-18.|[Unpaid Receivables](SDD/UnpaidReceivables.md)|HR
+16.|[Export G/L and VAT](features/ExportGLandVAT.md)|SI
+17.|[Detail Trial Balance Extended](features/DetailTrialBalanceExtended.md)|HR
+18.|[Unpaid Receivables](features/UnpaidReceivables.md)|HR
 19.|Sales Documents|
-20.|[Fiscalization](SDD/Fiscalization.md)|HR,SI
+20.|[Fiscalization](features/Fiscalization.md)|HR,SI
