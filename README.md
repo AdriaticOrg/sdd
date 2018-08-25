@@ -18,9 +18,9 @@ No.|Feature Name|Country Specific
 8.|Internal Correction|
 9.|Return Orders|
 10.|VAT Books|
-11.|VIES Feature|
-12.|Delivery Declaration|
-13.|[FAS Report](features/FAS.md)|
+11.|VIES Feature|SI
+12.|Delivery Declaration|SI
+13.|[FAS Report](features/FAS.md)|SI
 14.|KRD Report|SI
 15.|BST Report|SI
 16.|[Export G/L and VAT](features/ExportGLandVAT.md)|SI
