@@ -30,7 +30,7 @@ For each export prepare Report object. Use request page for filtering and data s
 > Note: User must be able to start exports from expected point (See User Interface). Therefore new VAT Statement books needs to be set up.
 
 VAT Statement Template has VAT Statement Report ID filed which should start right report.
-Use VAT Statement Column from [VAT Books feature](features/VATBooks.md) that identifies layout.
+Use VAT Statement Column from [VAT Books feature](VATBooks.md) that identifies layout.
 
 ## Data Design
 
