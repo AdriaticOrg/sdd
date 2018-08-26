@@ -9,6 +9,7 @@ Supported features:
 Module|Feature Name|Country Specific
 -----|------------|----------------
 VAT Posting|[VAT Date](features/VATDate.md)|All
+VAT Posting|[VAT Identifier](features/VATIdentifier.md)|All
 VAT Posting|[Postponed VAT](features/PostponedVAT.md)|All
 VAT Posting|[Full VAT Posting](features/FullVATPosting.md)|All
 VAT Posting|[Reverse Charge Posting](features/ReverseChargePosting.md)|All
