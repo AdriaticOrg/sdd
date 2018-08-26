@@ -113,7 +113,7 @@ Export VAT Entries where Amount or/and Base are not null.
 #### File Layout
 
 No.|Position from|Position to|Length|Field Type|Field Name with description|Format/alignment|Export field name|NAV table|Field in NAV|VAT Identifier filter
----|-------------|-----------|------|----------|---------------------------|----------------|-----------------|---------|------------|---------------------|----
+---|-------------|-----------|------|----------|---------------------------|----------------|-----------------|---------|------------|---------------------
 1|1|4|4|N|VAT periodPosting Date in format <Month,2><Month,2>|**Odb**|VAT Entry|Posting Date||
 2|6|13|8|N|Posting date |format DDMMLLLL|**Dat knj**|VAT Entry|Posting Date||
 3|15|44|30|AN|Document No. |the first 30 characters, left alignment|**Številka listine**|VAT Entry|Document No.||
