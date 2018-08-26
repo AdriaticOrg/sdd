@@ -14,7 +14,7 @@ Field is part of all Sales, Purchase and Service documents and finally to Genera
 
 Add VAT Date field to all Sales, Purchase and Service documents and Journal lines.
 Table Name|Type
--|-
+--|--
 Sales Header|Document
 Purchase Header|Document
 Service Header|Document
