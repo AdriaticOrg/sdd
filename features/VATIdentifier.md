@@ -12,12 +12,18 @@ Create new table `VAT Identifier` and link it with `VAT Posting Setup`. This wil
 
 ## Data Design
 
-### VAT Identifier
+### New table VAT Identifier
 
 Name|Type
 ----|----
 Code|Code[20]
 Description|Text[50]
+
+### Add new field to VAT Entry
+
+Name|Type
+----|----
+VAT Identifier|Code[20]
 
 ## Data Flow
 
@@ -25,6 +31,7 @@ Process Name|Scope|Proposed Event
 ------------|-----|--------------
 VAT Posting Setup Validation|Test if your value fits VAT Identifier table content|`"VAT Posting Setup".OnValidateVATIdentifier`
 VAT Posting Setup Lookup|Enable lookup from VAT Posting Setup|`"VAT Posting Setup".OnLookupVATIdentifier`
+Copy value to VAT Entry|When posting VAT also copy calculated value to VAT Entry|`"VAT Entry".OnAfterCopyFromGenJnlLine`
 
 ## User Interface
 
