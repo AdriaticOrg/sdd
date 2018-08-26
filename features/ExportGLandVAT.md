@@ -114,12 +114,12 @@ Export VAT Entries where Amount or/and Base are not null.
 
 No.|Position from|Position to|Length|Field Type|Field Name with description|Format/alignment|Export field name|NAV table|Field in NAV|VAT Identifier filter
 ---|-------------|-----------|------|----------|---------------------------|----------------|-----------------|---------|------------|---------------------|----
-1|1|4|4|N|VAT periodPosting Date in format <Month,2><Month,2>|**Odb**|VAT Entry|Posting Date
-2|6|13|8|N|Posting date |format DDMMLLLL|**Dat knj**|VAT Entry|Posting Date
-3|15|44|30|AN|Document No. |the first 30 characters, left alignment|**Številka listine**|VAT Entry|Document No.
-4|46|53|8|N|Document date |format DDMMLLLL|**Dat lis**|VAT Entry|Document Date
-5|55|104|50|AN|Customer name and address |the first 50 characters, left alignment|**Kupec**|Posted document /Vendor /Customer|Bill-to Name, Bill-to Address, Bill-to City, Bill-to Country/Region Code
-6|106|125|20|AN|Customer VAT registration No. |the first 20 characters, left alignment|**IŠ za DDV**|VAT Entry|VAT Registration No.
+1|1|4|4|N|VAT periodPosting Date in format <Month,2><Month,2>|**Odb**|VAT Entry|Posting Date||
+2|6|13|8|N|Posting date |format DDMMLLLL|**Dat knj**|VAT Entry|Posting Date||
+3|15|44|30|AN|Document No. |the first 30 characters, left alignment|**Številka listine**|VAT Entry|Document No.||
+4|46|53|8|N|Document date |format DDMMLLLL|**Dat lis**|VAT Entry|Document Date||
+5|55|104|50|AN|Customer name and address |the first 50 characters, left alignment|**Kupec**|Posted document /Vendor /Customer|Bill-to Name, Bill-to Address, Bill-to City, Bill-to Country/Region Code||
+6|106|125|20|AN|Customer VAT registration No. |the first 20 characters, left alignment|**IŠ za DDV**|VAT Entry|VAT Registration No.||
 7|127|142|16|N|The value of sales of goods and services excluding VAT |right alignment, format -999999999999.99|**Vred brez DDV**|VAT Entry|Base|9, 10, 12, 14, 16, 18, 112, 114, 116, 118|
 8|144|159|16|N|The value of sales of goods and services in Slovenia from reverse charge VAT | right alignment, format -999999999999.99|**Vred za samoobd**|VAT Entry|Base|35, 36|
 9|161|176|16|N|The value of exempt sales in EU without no right for deduction |right alignment, format -999999999999.99|**OD brez pravice**|VAT Entry|Base|8, 82|
