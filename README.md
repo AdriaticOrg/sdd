@@ -6,28 +6,28 @@ A software design description (a.k.a. software design document or SDD), also Sof
 
 Supported features:
 
-No.|Feature Name|Country Specific
---:|------------|----------------
-1.|[VAT Date](features/VATDate.md)|
-2.|[Postponed VAT](features/PostponedVAT.md)|
-3.|[Full VAT Posting](features/FullVATPosting.md)|
-4.|[Reverse Charge Posting](features/ReverseChargePosting.md)|
-5.|[Informative VAT](features/InformativeVAT.md)|SI
-6.|[Red reversal Posting](features/RedReversalPosting.md)|
-7.|[Forced Debit / Credit Posting](features/ForcedDebitCreditPosting.md)|
-8.|[Internal Correction](features/InternalCorrection.md)|
-9.|[Return Orders](features/ReturnOrders.md)|
-10.|[VAT Books](features/VATBooks.md)|
-11.|[VIES Feature](features/VIES.md)|SI
-12.|[Delivery Declaration](features/DeliveryDeclaration.md)|SI
-13.|[FAS Report](features/FAS.md)|SI
-14.|[KRD Report](features/KDR.md)|SI
-15.|[BST Report](features/BST.md)|SI
-16.|[Export G/L and VAT](features/ExportGLandVAT.md)|SI
-17.|[Detail Trial Balance Extended](features/DetailTrialBalanceExtended.md)|HR
-18.|[Unpaid Receivables](features/UnpaidReceivables.md)|HR
-19.|[Sales Documents](features/SalesDocuments.md)|
-20.|[Fiscalization](features/Fiscalization.md)|HR,SI
+Module|Feature Name|Country Specific
+-----|------------|----------------
+VAT Posting|[VAT Date](features/VATDate.md)|All
+VAT Posting|[Postponed VAT](features/PostponedVAT.md)|All
+VAT Posting|[Full VAT Posting](features/FullVATPosting.md)|All
+VAT Posting|[Reverse Charge Posting](features/ReverseChargePosting.md)|All
+VAT Posting|[Informative VAT](features/InformativeVAT.md)|SI
+General Ledger|[Red reversal Posting](features/RedReversalPosting.md)|All
+General Ledger|[Forced Debit / Credit Posting](features/ForcedDebitCreditPosting.md)|All
+Sales & Purchase|[Internal Correction](features/InternalCorrection.md)|All
+Sales & Purchase|[Return Orders](features/ReturnOrders.md)|All
+Sales & Purchase|[Sales Documents](features/SalesDocuments.md)|All
+Sales & Purchase|[Fiscalization](features/Fiscalization.md)|HR,SI
+Reporting|[VAT Books](features/VATBooks.md)|All
+Reporting|[Export G/L and VAT](features/ExportGLandVAT.md)|SI
+Reporting|[VIES Feature](features/VIES.md)|SI
+Reporting|[Delivery Declaration](features/DeliveryDeclaration.md)|SI
+Reporting|[FAS Report](features/FAS.md)|SI
+Reporting|[KRD Report](features/KDR.md)|SI
+Reporting|[BST Report](features/BST.md)|SI
+Reporting|[Detail Trial Balance Extended](features/DetailTrialBalanceExtended.md)|HR
+Reporting|[Unpaid Receivables](features/UnpaidReceivables.md)|HR
 
 ## How to write design?
 
