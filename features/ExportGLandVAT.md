@@ -38,7 +38,7 @@ File name: IZPIS GLAVNE KNJIGE.TXT
 #### Layout
 
 No.|Position from|Position to|Length|Field Type|Field Name with description|Format/alignment|Export field name|NAV table|Field in NAV
---|---|---|---|---|-----------------|----|-----------|-----|----
+---|-------------|-----------|------|----------|---------------------------|----------------|-----------------|---------|------------
 1|1|10|10|N|G/L account no.|the first 10 characters, left alignment|**Konto**|G/L Account|No.
 2|12|61|50|AN|G/L account name|the first 50 characters, left alignment|**Ime konta**|G/L Account|Name
 3|63|70|8|N|Posting date|format DDMMLLLL|**Dat knj**|G/L Entry|Posting Date
@@ -66,14 +66,14 @@ Export VAT Entries where Amount or/and Base are not null.
 - Document No.
 
 No.|Position from|Position to|Length|Field Type|Field Name with description|Format/alignment|Export field name|NAV table|Field in NAV|VAT Identifier filter|Type
---|--|--|--|------|-------|--------|----|-----|----|----|----|----
-1|1|4|4|N|VAT periodPosting Date in format <Month,2><Month,2>|**Odb**|VAT Entry|Posting Date
-2|6|13|8|N|Posting date|format DDMMLLLL|**Dat knj**|VAT Entry|Posting Date
-3|15|22|8|N|OutputPosting Date|format DDMMLLLL|**Dat pre**|VAT Entry|Document Receipt Date
-4|24|53|30|AN|Document No.|the first 30 characters, left alignment|**Številka listine**|VAT Entry|Document No.
-5|55|62|8|N|Document date|format DDMMLLLL|**Dat lis**|VAT Entry|Document Date
-6|64|113|50|AN|Vendor name and address|the first 50 characters, left alignment|**Dobavitelj**|Posted document /Vendor /Customer|Pay-to Name, Pay-to Address, Pay-to City, Pay-to Country/Region Code
-7|115|134|20|AN|Vendor VAT registration No.|the first 20 characters, left alignment|**IŠ za DDV**|VAT Entry|VAT Registration No.
+---|-------------|-----------|------|----------|---------------------------|----------------|-----------------|---------|------------|---------------------|----
+1|1|4|4|N|VAT periodPosting Date in format <Month,2><Month,2>|**Odb**|VAT Entry|Posting Date||
+2|6|13|8|N|Posting date|format DDMMLLLL|**Dat knj**|VAT Entry|Posting Date||
+3|15|22|8|N|OutputPosting Date|format DDMMLLLL|**Dat pre**|VAT Entry|Document Receipt Date||
+4|24|53|30|AN|Document No.|the first 30 characters, left alignment|**Številka listine**|VAT Entry|Document No.||
+5|55|62|8|N|Document date|format DDMMLLLL|**Dat lis**|VAT Entry|Document Date||
+6|64|113|50|AN|Vendor name and address|the first 50 characters, left alignment|**Dobavitelj**|Posted document /Vendor /Customer|Pay-to Name, Pay-to Address, Pay-to City, Pay-to Country/Region Code||
+7|115|134|20|AN|Vendor VAT registration No.|the first 20 characters, left alignment|**IŠ za DDV**|VAT Entry|VAT Registration No.||
 8|136|151|16|N|The value of purchases of goods and services excluding VAT|right alignment, format -999999999999.99|**Vred brez DDV**|VAT Entry|Base|10, 11, 12, 13, 23, 111, 112, 4010, 4011, 4012, 4013, 4023, 4026, 4111, 4112, 5010, 5011, 5012, 5111, 5112, 29, 20, 30, 4020, 5020|Type: Purchase
 |||||||||||18, 6023, 25, 26, 107, 108, 4108, 27, 6013, 4623, 4613, 6053, 6063, 4653, 4663|Type: Sale
 9|153|168|16|N|The value of purchases of goods and services in Slovenia from reverse charge VAT|right alignment, format -999999999999.99|**Vred SAMOOBD**|VAT Entry|Base|5141, 5140, 5041, 5040, 41, 40, 141, 140, 42, 43, 5042, 5043, 5142, 5143, 142, 143, 4042, 4043, 4142, 4143, 44, 5044, 4041, 4040|Type: Sale
@@ -113,7 +113,7 @@ Export VAT Entries where Amount or/and Base are not null.
 #### File Layout
 
 No.|Position from|Position to|Length|Field Type|Field Name with description|Format/alignment|Export field name|NAV table|Field in NAV|VAT Identifier filter
---|--|--|--|------|-------|--------|----|-----|----|----|----------------------
+---|-------------|-----------|------|----------|---------------------------|----------------|-----------------|---------|------------|---------------------|----
 1|1|4|4|N|VAT periodPosting Date in format <Month,2><Month,2>|**Odb**|VAT Entry|Posting Date
 2|6|13|8|N|Posting date |format DDMMLLLL|**Dat knj**|VAT Entry|Posting Date
 3|15|44|30|AN|Document No. |the first 30 characters, left alignment|**Številka listine**|VAT Entry|Document No.
