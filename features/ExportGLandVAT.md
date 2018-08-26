@@ -1,30 +1,41 @@
-# Export GL and VAT Ledgers for Tax Authorities SI
+# Export GL and VAT
 
 ## Feature requirement
 
-Export GL and VAT Ledgers on Tax Authorities demand functionality enables exporting of Electronic VAT books and G/L ledgers in format prescribed by Tax authorities.
+Export GL and VAT Ledgers on Tax Authorities demand exporting VAT books and G/L ledgers electronically in format prescribed by Tax authorities.
 
-## New Required Objects
+## Scope
 
-No.|Type|Object ID|Name
---:|----|-----------:|--------
-1.|Codeunit Extension|New Object|CUxxxxGLEntryExportSI -ADL
-2.|Codeunit Extension|New Object|CUxxxxInputVATBookExportSI -ADL
-3.|Codeunit Extension|New Object|CUxxxxOutputVATBookExportSI -ADL
-  
------
------
-       
-**1. GL Entry Export - SI:**
+This feature enables export in txt format with fix layout.
 
+## Architectural Design 
+
+It should cover at least 3 exports for Slovenian authorities:
+1. Chart of Accounts
+2. Input VAT Book
+3. Output VAT Book
+
+## Data Design
+
+## Data Flow
+
+## User Interface
+
+## Appendix 1
+
+### Chart of Accounts
+
+#### File Format
 Fixed .txt file in ASCII format, CP1250 code page.   
 Field delimiter is semicolon ( ; ), record delimiter is CR LF.   
-File name - IZPIS GLAVNE KNJIGE.TXT
+File name: IZPIS GLAVNE KNJIGE.TXT
 
-Export filters:
- - Posting Date - mandatory
- - G/L Account No.
+#### Request filters
 
+- Posting Date - mandatory
+- G/L Account No.
+
+#### Layout
 
 No.|Position from|Position to|Length|Field Type|Field Name with description|Format/alignment|Export field name|NAV table|Field in NAV
 --|---|---|---|---|-----------------|----|-----------|-----|----
@@ -39,10 +50,9 @@ No.|Position from|Position to|Length|Field Type|Field Name with description|Form
 9|184|199|16|N|Credit Amount|right alignment, format -999999999999.99|**Dobro**|G/L Entry|Credit Amount
 10|201|360|160|AN|Notes - not mandatory|left alignment|**Opombe**|G/L Entry|Entry No.
 
---------
---------
+### Input VAT Book Export
 
-**2. Input VAT Book Export - SI:**
+#### File Format
 
 Fixed .txt file in ASCII format, CP1250 code page.   
 Field delimiter is semicolon ( ; ), record delimiter is CR LF.   
@@ -50,11 +60,12 @@ File name - IZPIS ODBITKA DDV.TXT
 
 Export VAT Entries where Amount or/and Base are not null. 
 
-Export filters:
- - Posting Date - mandatory
- - Document No.
+#### Request Filters
 
- No.|Position from|Position to|Length|Field Type|Field Name with description|Format/alignment|Export field name|NAV table|Field in NAV|VAT Identifier filter|Type
+- Posting Date - mandatory
+- Document No.
+
+No.|Position from|Position to|Length|Field Type|Field Name with description|Format/alignment|Export field name|NAV table|Field in NAV|VAT Identifier filter|Type
 --|--|--|--|------|-------|--------|----|-----|----|----|----|----
 1|1|4|4|N|VAT periodPosting Date in format <Month,2><Month,2>|**Odb**|VAT Entry|Posting Date
 2|6|13|8|N|Posting date|format DDMMLLLL|**Dat knj**|VAT Entry|Posting Date
@@ -82,22 +93,26 @@ Export filters:
 20|340|355|16|N|Flate-rate compensation 8%|right alignment, format -999999999999.99|**Pav nadomestilo**|VAT Entry|VAT Amount|29|Type: Purchase
 21|357|516|160|AN|Notes - not mandatory|left alignment|**Opombe**|VAT Entry|Posting date||
 
-----
-----
+### Output VAT Book Export
 
-**3. Output VAT Book Export - SI:**
+#### File Format
 
 Fixed .txt file in ASCII format, CP1250 code page.   
 Field delimiter is semicolon ( ; ), record delimiter is CR LF.   
 File name - IZPIS OBRAČUNANEGA DDV.TXT
 
+#### System Filters
+
 Export VAT Entries where Amount or/and Base are not null. 
 
-Export filters:
- - Posting Date - mandatory
- - Document No.
+#### Request Filters
 
- No.|Position from|Position to|Length|Field Type|Field Name with description|Format/alignment|Export field name|NAV table|Field in NAV|VAT Identifier filter
+- Posting Date - mandatory
+- Document No.
+
+#### File Layout
+
+No.|Position from|Position to|Length|Field Type|Field Name with description|Format/alignment|Export field name|NAV table|Field in NAV|VAT Identifier filter
 --|--|--|--|------|-------|--------|----|-----|----|----|----------------------
 1|1|4|4|N|VAT periodPosting Date in format <Month,2><Month,2>|**Odb**|VAT Entry|Posting Date
 2|6|13|8|N|Posting date |format DDMMLLLL|**Dat knj**|VAT Entry|Posting Date
@@ -123,7 +138,3 @@ Export filters:
 22|382|397|16|N|Calculated VAT for sales f goods and services from export |right alignment, format -999999999999.99|**OBR DDV uvoz**|VAT Entry|VAT Amount|6023, 6013, 4623, 4613, 6053, 6063|
 23|399|414|16|N|The value of sales with right for deduction outside SI |right alignment, format -999999999999.99|**Vred obdavčljiv**|VAT Entry|Base|808|
 24|416|575|160|AN|Notes - not mandatory |left alignment|**Opombe**|VAT Entry|Posting Date
-
-
-
--------------------------------------------------------------------------------------------------

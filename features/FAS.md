@@ -1,4 +1,4 @@
-# FAS Reporting
+# FAS Report
 
 According to Bank of Slovenian rules, business entities, who are requested to submit finance account statistics data, should report data on the state of financial assets and liabilities in financial accounts and on transaction changes in value of financial assets and liabilities.
 
