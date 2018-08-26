@@ -35,4 +35,4 @@ Copy value to VAT Entry|When posting VAT also copy calculated value to VAT Entry
 
 ## User Interface
 
-User must be able to select VAT Identifier from list. Create new list `"VAT Identifires"`.
+User must be able to select VAT Identifier from list. Create new list `"VAT Identifiers"`.
