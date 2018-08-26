@@ -10,7 +10,7 @@ No.|Feature Name|Country Specific
 --:|------------|----------------
 1.|[VAT Date](features/VATDate.md)|
 2.|[Postponed VAT](features/PostponedVAT.md)|
-3.|[Full VAT Posting](features/FullVATPorting.md)|
+3.|[Full VAT Posting](features/FullVATPosting.md)|
 4.|[Reverse Charge Posting](features/ReverseChargePosting.md)|
 5.|[Informative VAT](features/InformativeVAT.md)|SI
 6.|[Red reversal Posting](features/RedReversalPosting.md)|
