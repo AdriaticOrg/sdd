@@ -17,13 +17,16 @@ This feature manages exporting data in fixed text format. 3 reports are covered:
 Create new object CODEUNIT Text Writer-adl that covers exporting capabilities:
 
 ``` PAS
-PROCEDURE Open(FieldDelimiter: text; RecordDelimiter: text);
-PROCEDURE Field(Value: variant);
-PROCEDURE FixedField(Value: variant; Length: integer);
-PROCEDURE NewLine;
-PROCEDURE Close;
-PROCEDURE Download(LocalFileName: text);
+PROCEDURE Open(FieldDelimiter: text; RecordDelimiter: text); // Opens file or stream for writing. 
+PROCEDURE Field(Value: variant); // Writes a field value based on variant type;
+PROCEDURE FixedField(Value: variant; Length: integer; Align: Option[Left, Center, Right]); // Writes a fixed field;
+PROCEDURE NewLine; // Writes new line that was passed at Open method
+PROCEDURE CRLF: Text; // Returns text for new line. 
+PROCEDURE Close; // Closes file or stream
+PROCEDURE Download(LocalFileName: text); // Downloads file locally and opens save as dialog. 
 ``` 
+
+> Note: Instead of using Field and FixedField try using same name with different set of parameters. 
 
 For each export prepare Report object. Use request page for filtering and data sources for looping through records. Use Text Writer codeunit to export fields as requested in Appendix.
 
