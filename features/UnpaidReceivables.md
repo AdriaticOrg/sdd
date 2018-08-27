@@ -18,7 +18,7 @@ No.|Type|Object ID|Name
 
 No.|Type|Object ID|Name
 --:|----|-----------:|--------
-1.|Table Extension|New Object|Tab81-Extxxxxx.GenJournalLine-ADL
+1.|Table Extension|New Object|Tab 81
 2.|Page Extension|New Object|Pag39-Extxxxxx.GeneralJournal-ADL
 3.|Codeunit|New Object|Codxxxxx.ALxxxxx
 4.|Report|New Object|RepxxxxOverdueAndUncollectedRec-ADL
