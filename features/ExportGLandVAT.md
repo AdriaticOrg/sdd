@@ -55,4 +55,5 @@ No.|Appendix Document
 ---|-----------------
 1. |[Char of Account](ExportGLandVAT/ChartOfAccount.md)
 2. |[Input VAT Books](ExportGLandVAT/InputVATBook.md)
+3. |[Output VAT Books](ExportGLandVAT/OutputVATBook.md)
 
