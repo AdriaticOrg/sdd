@@ -2,7 +2,10 @@
 
 Local full VAT posting functionality enables calculation of VAT base based on VAT Amount and VAT %, when VAT Calculation Type is set to Full VAT and allows user to change VAT base in Lines of Statistics on documents.
 
+> Range: 13.062.525..13.062.550
+
 > Alias: VAT Base Retrograde
+
 
 ## Scope
 User must be able to post Advanced Prepayment when payment is created in period before the goods or service are delivered.

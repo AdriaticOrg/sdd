@@ -2,6 +2,8 @@
 
 Forced Debit/Credit posting functionality enables checking the side of posting and force posting to the side, set on the account when Debit or Credit posting is set on General ledger account. (Debit/Credit Inventory, report 1001, report item  card)
 
+> Range: 13.062.571..13.062.580
+
 ## Scope
 
 ## Architectural Design 

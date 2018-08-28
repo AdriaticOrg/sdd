@@ -1,5 +1,9 @@
 # Detail Trial Balance Extended 
 
+> Range: 13.062.601..13.062.610
+
+> Country: HR
+
 ## Current object related to this feature
 
 No.|Type|Object ID|Name

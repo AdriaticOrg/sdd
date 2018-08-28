@@ -2,6 +2,8 @@
 
 VAT Date functionality enables posting of VAT on a different date as posting date. VAT Date is transferred to VAT and General ledger entries and used in corresponding reports and functionalities (VAT calculation, VAT Statement etc.). VAT Date is added to General Journal, Sales, Purchase and Service documents.
 
+> Range: 13.062.525..13.062.550
+
 ## Scope
 
 User must be able to enter different VAT date then usual Posting date to indicate VAT will be reported in different period. 

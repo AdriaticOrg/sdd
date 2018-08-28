@@ -4,6 +4,10 @@
 
 Export GL and VAT Ledgers on Tax Authorities demand exporting VAT books and G/L ledgers electronically in fix text format prescribed by Tax authorities.
 
+> Range: 13.062.591..13.062.600
+
+> Country: SI
+
 ## Scope
 
 This feature manages exporting data in fixed text format. 3 reports are covered:

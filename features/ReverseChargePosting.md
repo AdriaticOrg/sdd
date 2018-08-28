@@ -2,7 +2,7 @@
 
 Reverse Charge VAT functionality enables posting of inbound and outbound VAT in Purchase documents, creating two separate VAT entries with two different VAT dates. Report Calc. and Post VAT Settlement is changed to support closing of two instead of only one entry and to take in account VAT receivables and payables account set in the report, instead of the reverse charge accounts set in VAT Posting Setup.
 
-> Sanja: When reverse functionality is used, internal correction is set automatically. Table „Cancelled Document“, field  „Cancelation Doc. No.“ use to filter customer/vendor ledger entry. ???
+> Range: 13.062.525..13.062.550
 
 ## Scope
 

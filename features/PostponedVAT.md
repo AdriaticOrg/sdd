@@ -2,6 +2,8 @@
 
 For some countries (egg. Croatia) it is possible to correct sales VAT when approved Sales Credit Memo is received from customer and not when Credit Memo is posted. The Post and Correct Postponed VAT on Sales Credit Memos feature enables you to correct and postpone VAT on Sales Credit Memos to different GL account and with different setup in VAT entries, after you receive a receipt from the customer. Companies can reclaim VAT from the return of goods from a customer or from a discount granted after the invoice has been issued to a customer. To correct and postpone VAT on the Credit Memos on which the discount is granted after the invoice is issued, you must receive a written confirmation from the customer. For some countries (egg. Slovenia) only clause on the credit memo that VAT was subtracted is needed, so in that case functionality doesn't need to be turned on.
 
+> Range: 13.062.525..13.062.550
+
 ## Scope
 User must be able to enter received date on Sales Credit Memo or directly in Journal Line. This action creates additional VAT Entry.
 

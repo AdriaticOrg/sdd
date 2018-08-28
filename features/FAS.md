@@ -12,6 +12,10 @@ The data for financial accounts statistics must be submitted by all institutiona
 
 Institutional units established during the year assess the reporting obligation by assessing the balance sheet at the end of the quarter for which data are reported.
 
+> Range: 13.062.641..13.062.660
+
+> Country: SI
+
 ## Scope
 
 User must be able to add setup the necessary data for FAS reporting and print the report which also has the option to export data to xml file. Setup includes filling two additional fields: FAS Sector Code and FAS Instrument Code on relevant master tables.
