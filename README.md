@@ -6,7 +6,7 @@ A software design description (a.k.a. software design document or SDD), also Sof
 
 Code|Name
 ----|----
-VAT|[Value Added Tax](https://github.com/AdriaticOrg/code/issues?q=is%3Aopen+is%3Aissue+project%3AAdriaticOrg%2Fcode%2F1)
+VAT|[VAT Posting](https://github.com/AdriaticOrg/code/issues?q=is%3Aopen+is%3Aissue+project%3AAdriaticOrg%2Fcode%2F1)
 GL|[General Ledger](https://github.com/AdriaticOrg/code/issues?q=is%3Aopen+is%3Aissue+project%3AAdriaticOrg%2Fcode%2F2)
 SP|[Sales & Purchase](https://github.com/AdriaticOrg/code/issues?q=is%3Aopen+is%3Aissue+project%3AAdriaticOrg%2Fcode%2F3)
 REP|[Reports](https://github.com/AdriaticOrg/code/issues?q=is%3Aopen+is%3Aissue+project%3AAdriaticOrg%2Fcode%2F4)
@@ -14,7 +14,7 @@ REP|[Reports](https://github.com/AdriaticOrg/code/issues?q=is%3Aopen+is%3Aissue+
 
 Supported features:
 
-No.|Module|Feature Name|Country Specific
+No.|Project|Feature Name|Country Specific
 ---|------|------------|----------------
 1.|VAT Posting|[VAT Date](features/VATDate.md)|All
 2.|VAT Posting|[VAT Identifier](features/VATIdentifier.md)|All
