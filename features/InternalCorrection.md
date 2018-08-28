@@ -4,7 +4,11 @@ Internal correction functionality enables to indicate Purchase and Sales Documen
 
 ## Scope
 
+When document (Sales or Purchase) has not left the company, it would be appropriate to reverse in a way that document does not effect on reporting from VAT Entries.
+
 ## Architectural Design 
+
+> Note: First test if there is really anything to do?
 
 ## Data Design
 
