@@ -30,6 +30,8 @@ Service Line|VAT % (informative)|Decimal
 Service Invoice Line|VAT % (informative)|Decimal
 Service Cr.Memo Line|VAT % (informative)|Decimal
 
+> Note: Service module is not supported with appropriate events!
+
 ## Data Flow
 
 Case for posting: 
@@ -51,4 +53,5 @@ LOCAL [IntegrationEvent] OnAfterCalcVATAmountLines(VAR SalesHeader : Record "Sal
 
 ## User Interface
 
-New field on page VAT Posting Setup.
+New field on page VAT Posting Setup, Sales Line & Service Line.
+Sales and Service Statistics.
