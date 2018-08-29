@@ -40,4 +40,10 @@ Post - Create Posted Document| Copy VAT date from Sales
 
 ## User Interface
 
-VAT Date should be available on Documents for editing, General Journal for editing, Posting documents for viewing.  
+VAT Date should be available on Documents for editing, General Journal for editing, Posting documents for viewing.
+
+## Test
+
+Test Name|Exercise|Verification
+-|-|-
+Set VAT Date for Sales Invoice|Open Page Sales Invoice and Set VAT Date then post Sales Invoice|Open Page Posted Sales Invoice and check VAT Date
