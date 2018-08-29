@@ -54,7 +54,7 @@ Posting Date|Amount|Base|Unrealized Amount|Unrealized Base|Remaining Amount|Rema
 
 ### VAT Entry - modified way
 Posting Date|Amount|Base|Unrealized Amount|Unrealized Base|Remaining Amount|Remaining Base
--:|-:|-:|-:|-:|-:|-:|-:
+-:|-:|-:|-:|-:|-:|-:
 01.09.18|0,00|0,00|1.000,00|20.000,00|0,00|0,00
 30.08.18|1.000,00|20.000,00|0,00|0,00|0,00|0,00
 01.09.18|-1.000,00|-20.000,00|0,00|0,00|0,00|0,00
