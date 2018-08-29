@@ -4,13 +4,9 @@ Red Reversal Postings functionality enables posting amounts as correction (negat
 
 > Range: 13.062.561..13.062.570
 
+## Prerequisites
 
-## Scope
+Please test if Microsoft has already corrected this miss feature.
+If not let's describe this issue and send to Microsoft corrected case.
 
-## Architectural Design 
-
-## Data Design
-
-## Data Flow
-
-## User Interface
+> NOTE: Place your case here:
