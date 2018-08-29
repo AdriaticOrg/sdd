@@ -4,6 +4,8 @@ Printable documents must meet local legislation. This feature resolves some miss
 
 ## Scope
 
+VAT Date on Posted Sales Invoice
+
 ## Architectural Design 
 
 ## Data Design
