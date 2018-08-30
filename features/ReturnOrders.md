@@ -6,6 +6,13 @@ Return Order as new goods turnover functionality enables to include Sales Return
 
 ## Scope
 
+VAT Posting Setup 
+
+Add new option Goods Return Type
+Option: Turnover.
+
+Sales Line -> VAT Product Posting Group. 
+
 ## Architectural Design 
 
 ## Data Design
