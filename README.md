@@ -4,7 +4,7 @@ A software design description (a.k.a. software design document or SDD), also Sof
 
 ## Features
 
-Features are listed in [code](/AdriaticOrg/code) repository and are linked back with document design.
+Features are listed in [code](https://github.com/AdriaticOrg/sdd) repository and are linked back with document design.
 Each feature is also created as issue with label feature: [List of Features](https://github.com/AdriaticOrg/code/issues?q=is:issue+label:feature).
 
 ## How to write design?
