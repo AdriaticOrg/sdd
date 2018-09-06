@@ -4,7 +4,13 @@ Printable documents must meet local legislation. This feature resolves some miss
 
 ## Scope
 
-VAT Date on Posted Sales Invoice
+Additional fields on Sales Documents:
+- Place of issue
+- Date of issue
+- Shipmet Date
+- VAT registration for customer
+- VAT Date 
+- VAT specification (also informative VAT)
 
 ## Architectural Design 
 
