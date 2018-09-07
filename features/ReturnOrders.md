@@ -5,7 +5,7 @@ Return Order as new goods turnover functionality enables to include Sales Return
 > Range: 13.062.591..13.062.600
 
 ## Scope
-User must be able to post Credit Memos and Return Orders with different VAT Bussines Posting Group, becausoe of need to post VAT entries with different VAT Identifier. User can change VAT Busines Posting Group when entering Code in new field Goods Return Type available on Sales and Purchase Credit Memos and also Return Orders. 
+User must be able to post Credit Memos and Return Orders with different VAT Bussines Posting Group, to get posted VAT entries with different VAT Identifier. User can change VAT Busines Posting Group when entering Code in new field Goods Return Type available on Sales and Purchase Credit Memos and also Return Orders. 
 
 ## Architectural Design 
 
@@ -42,4 +42,11 @@ On Validate of new field "Goods Return Type" validate "VAT Bussines Bosting Grou
 
 ## Data Flow
 
+Process Name|Scope|Proposed Event
+-|-|-
+Document Validation|When entering Goods Return Type copy VAT Bussines Posting Group from table Goods Return Type to VAT Bussines Posting Group|Document - Goods Return Type - OnValidate
+Post - Create Posted Document| Goods Return Type date from Document 
+
 ## User Interface
+
+Goods Return Type field should be available on documents for editing, and posting documents for viewing. Also new table Goods Return Type must be available to edit.
