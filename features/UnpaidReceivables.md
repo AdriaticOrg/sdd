@@ -3,16 +3,16 @@
 According to Croatian Accounting Law every company need to report overdue and unpaid receivables
 to Tax authorities. For this purpose, the government has made form that is called OPZ-STAT-1 (Overdue and uncollected receivables). The report must contain data on issued invoices which were not collected/paid within the legal or agreed period.
 
-About the overdue and unpaid receivables obligors should prepare statistical reports with the balance of the current year on the day of the payment in whole or in overall write-off. The form is submitted for due but unpaid receivables as of the last day of the expiry of each quarter.
+About the overdue and unpaid receivables obligatory should prepare statistical reports with the balance of the current year on the day of the payment in whole or in overall write-off. The form is submitted for due but unpaid receivables as of the last day of the expiry of each quarter.
 
 ## Current objects related to this feature
 
 No.|Type|Object ID|Name
 --:|----|-----------:|--------
-1. |Table |81  |Gen. Journal Line
-2. |Table |254  |VAT Entry
-3. |Codeunit |12  |Gen. Jnl.-Post Line
-4. |Page|39|General Journal
+1.|Table|81|Gen. Journal Line
+2.|Table|254|VAT Entry
+3.|Codeunit|12|Gen. Jnl.-Post Line
+4.|Page|39|General Journal
 
 ## New required objects
 
