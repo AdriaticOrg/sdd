@@ -51,7 +51,7 @@ Data is filtered in report and exported during report (Process Only) flow.
 
 User starts export from place related to data that is exporting:
 
-1. Chart of Accounts from Chart of Accounts clicks export.
+1. From Chart of Accounts clicks export.
 2. Input VAT Book from VAT Statement, selects INPUT VAT statement and clicks export, fills requested filters.
 3. Output VAT Book from VAT Statement, selects OUTPUT VAT statement and clicks export, fills requested filters.
 
