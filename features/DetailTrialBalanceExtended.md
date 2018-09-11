@@ -51,4 +51,5 @@ No.|Type|Object ID|Name
 
 ## User Interface
 
-Report should be added to Page 16 - Chart of Accounts in section Report.
+User starts report from place related to data that is exporting:
+1. From Chart of Accounts clicks Detail Trial Balance Extended in section Report.
