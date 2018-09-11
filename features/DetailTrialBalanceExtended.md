@@ -48,3 +48,5 @@ No.|Type|Object ID|Name
       - Global Posting Approver
 
 5. Report will be similar to report Detail Trial Balance (Report 4) and will have additional fields (Posting Responsible Person, Posting Approver). Fields will be populated from Field Approver ID from User ID which posted the entry. In case Approver ID is empty on User Setup Table fields will be populated from New fields on General Ledger Setup. Printing for one transaction must be possible.
+
+6. Report should be added to Page 16 - Chart of Accounts in section Report.
