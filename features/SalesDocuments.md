@@ -8,7 +8,6 @@ Additional fields on Sales Documents:
 - Place of issue
 - Date of issue
 - Shipmet Date
-- VAT registration for customer
 - VAT Date 
 - VAT specification (also informative VAT)
 
