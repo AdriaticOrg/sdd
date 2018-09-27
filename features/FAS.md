@@ -18,80 +18,76 @@ Institutional units established during the year assess the reporting obligation 
 
 ## Scope
 
-User must be able to add setup the necessary data for FAS reporting and print the report which also has the option to export data to xml file. Setup includes filling two additional fields: FAS Sector Code and FAS Instrument Code on relevant master tables.
+User must be able to setup the necessary data for FAS reporting and print the report which also has the option to export data to xml file. In general, besides FAS Setup, setup process includes filling two additional fields: FAS Sector Code-Adl and FAS Instrument Code-Adl on relevant master tables. Prior to this action, FAS Sector and FAS Instrument records should be inserted.
 
-## Architectural Design
+## Architectural Design
 
-FAS Sector Code and FAS Instrument Code are added to relevant master tables like Customer, Vendor etc, on general journal and general ledger entries. During any financial posting which results in a general ledger, both fields are populated.
+FAS Sector Code-Adl and FAS Instrument Code-Adl are added to relevant master tables like Customer, Vendor etc, on General Journal and General Ledger Entries. During any financial posting which results in a General Ledger Entry, both fields are populated if available. On G/L Account we have a few more additional fields:
+> FAS Account-Adl: indicates we want to enable FAS.
 
-## Data Desgin
+> FAS Type-Adl: indicates direction of inclusion on FAS report (Assets or Liabilities).
+
+> FAS Instrument Posting-Adl, FAS Sector Posting-Adl: is used to apply restrictions on posting.
+
+
+## Data Design
+
+Fields FAS Account-Adl, FAS Type-Adl, FAS Instrument Posting-Adl, FAS Sector Posting-Adl are added to table 15 G/L Account.
 
 Fields FAS Sector Code and/or Instrument Code are added to following tables
 
 ID|Name
 --:|----
-9|Country/Region
 15|G/L Account
 17|G/L Entry
 81|Gen. Journal Line
 18|Customer
 23|Vendor
 270|Bank Account
-5050|Contact
-92|Customer Posting Group
-93|Vendor Posting Group
-277|Bank Account Posting Group
 
-New objects are
+New objects are:
 
 Type|Name
 --|----|
-Table Extension|CountryRegion-adl
-Table Extension|GLAccount-adl
-Table Extension|GLEntry-adl
-Table Extension|GenJnlLine-adl
-Table Extension|Customer-adl
-Table Extension|Vendor-adl
-Table Extension|BankAccount-adl
-Table Extension|Contact-adl
-Table Extension|CustPstGroup-adl
-Table Extension|VendPstGroup-adl
-Table Extension|BankAccPstGroup-adl
+Table Extension|Country/Region-Adl
+Table Extension|G/L Account-adl
+Table Extension|Gen. Journal Line-Adl
+Table Extension|Customer-Adl
+Table Extension|Vendor-Adl
+Table Extension|Bank Account-Adl
 <br>|<br>
-Page Extension|Countries-adl
-Page Extension|GLAccountCard-adl
-Page Extension|GLEntries-adl
-Page Extension|GenJnlLine-adl
-Page Extension|CustomerCard-adl
-Page Extension|VendorCard-adl
-Page Extension|BankAccountCard-adl
-Page Extension|ContactCard-adl
-Page Extension|CustPstGroups-adl
-Page Extension|VendPstGroups-adl
-Page Extension|BankAccPstGroups-adl
+Page Extension|Countries/Regions-Adl
+Page Extension|G/L Account Card-Adl
+Page Extension|General Ledger Entries-Adl
+Page Extension|General Journal-Adl
+Page Extension|Customer Card-Adl
+Page Extension|Vendor Card-Adl
+Page Extension|Bank Account Card-Adl
 <br>|<br>
-Table|FAS Sector
-Table|FAS Instrument
-Table|FAS Setup
-Table|FAS Header
-Table|FAS Line
+Table|FAS Setup-Adl
+Table|FAS Sector-Adl
+Table|FAS Instrument-Adl
+Table|FAS Report Header-Adl
+Table|FAS Report Line-Adl
 <br>|<br>
-Page|FAS Report
-Page|FAS Report Subform
+Page|FAS Reports-Adl
+Page|FAS Report-Adl
+Page|FAS Report Subform-Adl
 <br>|<br>
-Report|FAS Suggest Lines
-Report|FAS Report
+Report|Suggest FAS Lines-Adl
+Report|Export FAS-Adl
 
 ## Data Flow
 
-Process Name|Scope|Proposed Event
---|--|--
-Journal validation|When entering Account No. copy Finance and/or Sector Code from relevant tables i.e Customer, Vendor, G/L Account, Bank Account|General Journal - Account No. - OnValidate
-Gen. Journal Line posting|Transfer Finance and Sector Code from Gen. Journal Line to G/L Entry. If data not available in Gen. Journal Line, try to get them from master tables (Customer, Vendor, Bank Account)|
-Report preparing|Open new Reporting document for the period in question, run the suggest lines process to populate Reporting document lines. Run the FAS Report to get the hard copy and/or xml file saved to disk.|
+Process Name|Scope
+--|--
+Sales/Purchase document posting|When data is transfered to Gen. Journal Line, we transfer new added fields too.
+Journal validation|When entering Account No. and Bal. Account No. in General Journal Line, copy FAS Instrument Code-Adl and/or FAS Sector Code-Adl from relevant tables i.e Customer, Vendor, G/L Account, Bank Account. 
+Gen. Journal Line posting|Transfer FAS Sector Code-Adl and FAS Instrument-Adl from Gen. Journal Line to G/L Entry. If data not available in Gen. Journal Line, try to get them from master tables (Customer, Vendor, Bank Account)|
+Report preparing|Open new Reporting document for the period in question, run the suggest lines process to populate Reporting document lines. Manually adjust lines if needed. Run the Export FAS activity to get the hard copy and/or xml file saved to disk.|
 
 ## User Interface
 
-Finance and Sector Code should be visible on relevant page extensions for viewing and/or editing.
+New FAS related filedls should be visible on relevant page extensions for viewing and/or editing.
 
->Note: file may be altered in near future.
+>Note: this file may be subject of change in near future if need arises.
