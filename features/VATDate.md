@@ -1,6 +1,6 @@
 # VAT Date
 
-VAT Date functionality enables posting of VAT on a different date as posting date. VAT Date is transferred to VAT and General ledger entries and used in corresponding reports and functionalities (VAT calculation, VAT Statement etc.). VAT Date is added to General Journal, Sales, Purchase and Service documents.
+VAT Date functionality enables posting of VAT on a different date as posting date. VAT Date is transferred to General ledger Entries and is used in corresponding reports to print information about VAT Date. VAT Date is added to General Journal, Sales, Purchase and Service documents.
 
 > Range: 13.062.525..13.062.550
 
@@ -10,7 +10,7 @@ User must be able to enter different VAT date then usual Posting date to indicat
 
 ## Architectural Design
 
-Field is part of all Sales, Purchase and Service documents and finally to General Journal Line. When VAT date is different then Posting Date Postponed VAT feature is used to produce needed transactions. Finally VAT Date must be printable also on posted documents. 
+Field is part of all Sales, Purchase and Service documents and finally to General Journal Line. When VAT Date is different then Posting Date Postponed VAT feature is used to produce needed transactions. Finally VAT Date must be printable also on posted documents. 
 
 ## Data Design
 
