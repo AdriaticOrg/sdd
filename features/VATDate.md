@@ -20,7 +20,6 @@ Table Name|Type
 --|--
 Sales Header|Document
 Purchase Header|Document
-Service Header|Document
 Gen. Journal Line|Journal
 Sales Invoice Header|Posted Document
 Sales Cr.Memo Header|Posted Document
