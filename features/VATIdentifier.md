@@ -10,7 +10,7 @@ VAT Identifier is used for reporting filtering. To simplify filtering this featu
 
 ## Architectural Design 
 
-Create new table `VAT Identifier` and link it with `VAT Posting Setup`. This will prevent user from using wrong value. You will not be able to link directly. Workaround is to override validation and lookup. Add `VAT Identifier` field to `VAT Entry` table and make sure it's updated wile posting VAT. 
+Create new table `VAT Identifier` and link it with `VAT Posting Setup`. This will prevent user from using wrong value. You will not be able to link directly. Workaround is to override validation and lookup. Add `VAT Identifier` field to `VAT Entry` table and make sure it's updated while posting VAT. 
 
 ## Data Design
 
