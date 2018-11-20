@@ -33,7 +33,7 @@ Process Name|Scope|Proposed Event
 Document Validation|When entering Posting Date copy VAT Date if VAT date is empty|Document - Posting Date - OnValidate
 Post - Create Journal|Copy VAT Date from Sales / Purchase / Service Document to General Journal Line|
 Post - Create Transactions| When Posting Date and VAT Date is different it should produce additional VAT Entry. 
-Post - Create Posted Document| Copy VAT date from Sales 
+Post - Create Posted Document| Copy VAT date from Sales / Purchase unposted documents. 
 
 ## User Interface
 
