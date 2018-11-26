@@ -50,10 +50,6 @@ OBJECT Table 255 VAT Entry
 
 ### Sales or Purchase Document
 Posting Date|Document Type|Output Date|VAT Date|VAT %|VAT Amount|VAT % (retrograde)
--:|-:|-:|-:|-:|-:|-:|-:|-:
-20.08.18|Purchase Invoice||01.09.18|100|1.000,00|20
-
-Posting Date|Document Type|Output Date|VAT Date|VAT %|VAT Amount|VAT % (retrograde)
 -:|-:|-:|-:|-:|-:|-:
 20.08.18|Purchase Invoice||01.09.18|100|1.000,00|20
 
