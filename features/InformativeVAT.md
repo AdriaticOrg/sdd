@@ -36,19 +36,19 @@ Service Cr.Memo Line|VAT % (informative)|Decimal
 
 Case for posting: 
 
-VAT Bus. Posting Group|VAT Prod. Posting Group|VAT Identifier|VAT %|VAT % (Informative)
-----------------------|-----------------------|--------------|-----|-------------------
-K-DA|B-22|36|22|0
-K-DA|B-9,5|35|9,5|0
-K-DA|ODB-22|36|0|22
-K-DA|ODB-9,5|35|0|9,5
+VAT Bus. Posting Group|VAT Prod. Posting Group|VAT Calculation Type|VAT Identifier|VAT %|VAT % (Informative)
+----------------------|-----------------------|--------------------|--------------|-----|-------------------
+K-DA|B-22|Normal VAT|36|22|0
+K-DA|B-9,5|Normal VAT|35|9,5|0
+K-DA|ODB-22|Normal VAT|36|0|22
+K-DA|ODB-9,5|Normal VAT|35|0|9,5
 
 ### Posting VAT Entry for Normal VAT %
 Posting Date|Type|Amount|Base|VAT % 
 -:|-:|-:|-:|-:
 20.08.18|Sale|-220,00|-1.000,00|22
 
-### Posting VAT Entry for VAT % (Informative)
+### Posting VAT Entry for Normal VAT % (Informative)
 Posting Date|Type|Amount|Base|VAT %
 -:|-:|-:|-:|-:
 20.08.18|Sale|0,00|-1.000,00|0
