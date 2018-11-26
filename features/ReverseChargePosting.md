@@ -50,7 +50,7 @@ Posting Date|Type|Amount|Base
 Posting Date|Type|Amount|Base
 -:|-:|-:|-:
 20.08.18|Purchase|200,00|1.000,00
-20.08.18|Sale|200,00|1.000,00
+20.08.18|Sale|-200,00|-1.000,00
 
 ## User Interface
 VAT Output date in documents: Purchase Invoice, Purchase Order, Purchase Return Order and Purchase Credit Memo, General Journal, Purchase Journal.
