@@ -36,7 +36,7 @@ Page|Posted Purchase Credit Memo
 Page|Service Credit Memo
 Page|Posted Service Credit Memos
 
-On Validate of new field "Goods Return Type" validate "VAT Bussines Bosting Group" with predefined value in table "Goods Return Type".
+On Validate of new field "Goods Return Type" validate "VAT Business Posting Group" with predefined value in table "Goods Return Type".
 
 ## Data Design
 
@@ -44,7 +44,7 @@ On Validate of new field "Goods Return Type" validate "VAT Bussines Bosting Grou
 
 Process Name|Scope|Proposed Event
 -|-|-
-Document Validation|When entering Goods Return Type copy VAT Bussines Posting Group from table Goods Return Type to VAT Bussines Posting Group|Document - Goods Return Type - OnValidate
+Document Validation|When entering Goods Return Type copy VAT Business Posting Group from table Goods Return Type to VAT Business Posting Group|Document - Goods Return Type - OnValidate
 Post - Create Posted Document| Goods Return Type date from Document 
 
 ## User Interface
