@@ -53,6 +53,9 @@ Posting Date|Document Type|Output Date|VAT Date|VAT %|VAT Amount|VAT % (retrogra
 -:|-:|-:|-:|-:|-:|-:|-:|-:
 20.08.18|Purchase Invoice||01.09.18|100|1.000,00|20
 
+Posting Date|Document Type|Output Date|VAT Date|VAT %|VAT Amount|VAT % (retrograde)
+-:|-:|-:|-:|-:|-:|-:|-:|-:
+
 ### VAT Entry - standard way
 Posting Date|Amount|Base|Unrealized Amount|Unrealized Base|Remaining Amount|Remaining Base
 -:|-:|-:|-:|-:|-:|-:
