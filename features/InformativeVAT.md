@@ -46,7 +46,7 @@ K-DA|ODB-9,5|35|0|9,5
 ### Posting VAT Entry for Normal VAT %
 Posting Date|Type|Amount|Base|VAT % 
 -:|-:|-:|-:|-:
-20.08.18|Sale|-200,00|-1.000,00|20
+20.08.18|Sale|-220,00|-1.000,00|22
 
 ### Posting VAT Entry for VAT % (Informative)
 Posting Date|Type|Amount|Base|VAT %
