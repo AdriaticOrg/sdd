@@ -8,7 +8,7 @@ Local full VAT posting functionality enables calculation of VAT base based on VA
 
 
 ## Scope
-User must be able to post Advanced Prepayment when payment is created in period before the goods or service are delivered.
+User must be able to post document with full VAT, where VAT Base Retrograde is automatically calculated for entered line..
 
 
 ## Data Design
