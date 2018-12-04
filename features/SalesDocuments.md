@@ -19,7 +19,7 @@ Additional fields on printout of Sales Documents: Sales Invoice, Sales Credit Me
 ## Data Flow
 
 Field|Source
--|-
+-----|------
 Place of issue|Program transfers data from field City specified on Company Information.
 Date of issue|Program transfers data from field Document Date on Sales Header.
 Shipment Date|Program transfers data from field Shipment Date on Sales Header.
